@@ -1,0 +1,22 @@
+HOW TO RUN THE PROJECT:
+- Clone this repository
+- copy paste file .envexample and rename file become .env
+- create database with name "barberx"
+- run command :
+  -> composer install
+  -> php artisan key:generate
+- create new folder name "images" inside "storage/app/public"
+- run command:
+  -> php artisan storage:link
+  -> php artisan migrate
+  -> php artisan db:seed --class=UserSeeder
+  -> php artisan db:seed --class=serviceCategorySeeder
+  -> php artisan db:seed --class=EmployeeSeeder
+  -> php artisan db:seed --class=messageSeeder
+  -> php artisan serve
+
+---------------------------------------------------------------------------------------------------------------
+--NOTE!!
+PLEASE GO TO "public/defaultImage" AND COPY ALL DEFAULT IMAGE INSIDE THE FOLDER AND PASTE TO "storage/app/public/images"
+IF YOU DON'T HAVE IMAGE FOLDER IN "storage/app/public" CREATE NEW FOLDER NAME "images" AND THEN RUN COMMAND "php artisan storage:link"
+---------------------------------------------------------------------------------------------------------------
